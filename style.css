@@ -1,0 +1,25 @@
+header{
+    grid-area: cabe;
+    border: solid red 2px;
+}
+main{
+    grid-area: prin;
+    border: solid blue 2px;
+}
+aside{
+    grid-area: brac;
+    border: solid green 2px;
+}
+footer{
+    grid-area: roda;
+    border: solid pink 2px;
+}
+body{
+    display: grid;
+    grid-template-areas:
+    "cabe cabe"
+    "brac prin"
+    "roda roda";
+    grid-template-columns: 20% auto;
+    grid-template-rows: 25% 300px 25%
+}
